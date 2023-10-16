@@ -3,5 +3,5 @@ on:
  workflow_dispatch:
 jobs:
  calling-test-job:
-  uses: Suraj-kaul/Caller-workflow-ec2/.github/workflows/test.yaml@main
+  uses: Suraj-kaul/Caller-workflow-ec2/.github/workflows/deploy.yml@master
 
