@@ -1,12 +1,17 @@
 name: caller_workflow
 on:
  workflow_dispatch:
- push:
+  inputs:
+      role:
+        description: 'role arn'     
+        required: true
+        type: string
+ # push:
 jobs:
  calling-test-job:
   uses: Suraj-kaul/fresher-trainee---Ec2_instance/.github/workflows/deploy.yml@master
   with:
-   role: arn:aws:iam::528519205020:role/pinkesh-TU
+   role: ${{ inputs.role }}    
   permissions:
    id-token: write
    contents: read
