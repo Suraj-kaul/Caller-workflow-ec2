@@ -9,6 +9,6 @@ jobs:
       contents: read
 
   secrets: inherit
-  # with:
-  #      aws_role_arn: arn:aws:iam::528519205020:role/pinkesh-TU
+  with:
+       aws_role_arn: arn:aws:iam::528519205020:role/pinkesh-TU
 
