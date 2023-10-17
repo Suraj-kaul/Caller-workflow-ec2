@@ -3,7 +3,7 @@ on:
  workflow_dispatch:
 jobs:
  calling-test-job:
-  uses: Suraj-kaul/fresher-trainee---Ec2_instance/.github/workflows/deploy.yml@master
+  uses: Suraj-kaul/fresher-trainee---Ec2_instance/.github/workflows/deploy.yml@refs/heads/master
   permissions:
       id-token: write
       contents: read
