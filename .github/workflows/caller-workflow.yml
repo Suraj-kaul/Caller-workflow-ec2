@@ -5,4 +5,6 @@ jobs:
  calling-test-job:
   uses: Suraj-kaul/fresher-trainee---Ec2_instance/.github/workflows/deploy.yml@master
   secrets: inherit
+  with:
+       aws_role_arn: arn:aws:iam::528519205020:role/pinkesh-TU
 
